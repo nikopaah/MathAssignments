@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public Transform gasoline;
+    public Transform Gasoline;
 
     private void OnDrawGizmos()
     {
-        Vector2 gasPos = gasoline.position;
+        Vector2 gasPos = Gasoline.position;
 
         // Draw the A Vector
         Gizmos.color = Color.blue;

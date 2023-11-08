@@ -59,7 +59,7 @@
     <Compile Include="Assets\Scripts\01-RadialTrigger\GasolineScript.cs" />
     <Compile Include="Assets\Scripts\01-RadialTrigger\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\01-RadialTrigger\TriggerExplosion.cs" />
-    <Compile Include="Assets\Scripts\CreateLaserPath.cs" />
+    <Compile Include="Assets\Scripts\02-BouncingLaser\CreateLaserPath.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -354,7 +354,7 @@
 "Assets/Scripts/01-RadialTrigger/GasolineScript.cs"
 "Assets/Scripts/01-RadialTrigger/PlayerScript.cs"
 "Assets/Scripts/01-RadialTrigger/TriggerExplosion.cs"
-"Assets/Scripts/CreateLaserPath.cs"
+"Assets/Scripts/02-BouncingLaser/CreateLaserPath.cs"
 -langversion:9.0
 
 /deterministic

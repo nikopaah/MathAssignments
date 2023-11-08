@@ -24,8 +24,8 @@ public class GasolineScript : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(gasPos, gasLimit);
 
-        // ############################################### //
-        /*
+		// ############################################### //
+		/*
          * My solution didn't work when you move the object to negative side :'(
          * 
          * 
@@ -53,17 +53,20 @@ public class GasolineScript : MonoBehaviour
         }*/
 
 
-        /* ================= Freya Solution ================= */
-        
-        /* ## Easy way ## */
-        //float dist = Vector3.Distance(gasPos, playerPos);
-        Vector3 delta = gasPos - playerPos;
+		/* ================= Freya Solution ================= */
 
-        float dist = Mathf.Sqrt(delta.x * delta.x + delta.y * delta.y + delta.z * delta.z);
+		/* ## Easy way ## */
+		//float dist = Vector3.Distance(gasPos, playerPos);
+		//float dist = Vector3.Dot(delta, delta);  // Squared length of delta
+		Vector3 delta = gasPos - playerPos;
+
+        // Use Sqrt is too expensive, so we can remove the squareroot and multiple by 2 after
+        //float dist = Mathf.Sqrt(delta.x * delta.x + delta.y * delta.y + delta.z * delta.z);
+        float sqrDist = delta.x * delta.x + delta.y * delta.y + delta.z * delta.z;
 
 
-
-        bool inside = dist <= gasLimit.x;
+        // That's why we multiply by 2 the radius
+        bool inside = sqrDist <= gasLimit.x*gasLimit.x;
 
         Handles.color = inside == true? Color.red : Color.white;
         

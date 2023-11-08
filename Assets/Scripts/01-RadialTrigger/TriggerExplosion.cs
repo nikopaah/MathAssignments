@@ -22,7 +22,7 @@ public class TriggerExplosion : MonoBehaviour
         playerLen = Mathf.Sqrt(playerPos.x * playerPos.x + playerPos.y * playerPos.y);
         gasolineLen = Mathf.Sqrt(gasolinePos.x * gasolinePos.x + gasolinePos.y * gasolinePos.y);
 
-        if(playerLen < gasolineLen) 
+        if (playerLen < gasolineLen)
         { // EXPLOOOOOSION
             Gizmos.DrawCube(gasolinePos, gasolinePos);
         }

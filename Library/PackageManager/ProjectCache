@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638326376862429429
-    m_Hash: 1010242877
+      ticks: 638333346061615475
+    m_Hash: 1966945893
   m_LockFileStatus:
     m_FilePath: E:/Projetos/Estudos/MathAssignments/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638326377197043346
-    m_Hash: 1035663092
+      ticks: 638333346061625484
+    m_Hash: 1132395109
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3255,6 +3255,7 @@ m_ResolvedPackages:
     - 1.9.0
     - 1.10.1
     - 1.11.0
+    - 1.12.0
     compatible:
     - 1.6.0
     - 1.7.0
@@ -3264,6 +3265,7 @@ m_ResolvedPackages:
     - 1.9.0
     - 1.10.1
     - 1.11.0
+    - 1.12.0
     verified: 1.6.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
